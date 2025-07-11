@@ -1,44 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Te Amo</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: #000;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        h1 {
-            color: #ff4b5c;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-        img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Te Amo</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #ff4b5c;
+      font-size: 2.5em;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .imagem-container {
+      position: relative;
+      width: 300px; /* Largura fixa */
+      aspect-ratio: 1 / 1; /* Mantém proporção quadrada */
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(255,0,0,0.6);
+    }
+    .imagem-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cobre todo o container */
+      object-position: center; /* Centraliza dentro */
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Vc sabe que eu te amo ❤️</h1>
-        <img src="324A9BE4-6A5F-4DEA-9765-1E9E562A911F.jpeg" alt="Buquê de flores">
-    </div>
+  <h1>Vc sabe que eu te amo ❤️</h1>
+  <div class="imagem-container">
+    <img src="324A9BE4-6A5F-4DEA-9765-1E9E562A911F.jpeg" alt="Imagem amor">
+  </div>
 </body>
 </html>
